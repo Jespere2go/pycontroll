@@ -10,7 +10,7 @@ port = 9999
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-s.sendto("Hello from client".encode(), (host, port))
+s.sendto("test".encode(), (host, port))
 
 data, addr = s.recvfrom(1024)
 print(data.decode())
